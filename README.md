@@ -1,2 +1,2 @@
 # hendrikTpl.github.io
-Data Science Blog
+My Profile
