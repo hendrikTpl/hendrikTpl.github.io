@@ -9,10 +9,10 @@ body.active {
 }
 
 .no-js #experience-timeline>div {
-    background: #fff;
+    background: rgb(255, 255, 255);
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #dcd9d9
+    border: 1px solid hsl(0, 100%, 100%)
 }
 
 .no-js #experience-timeline>div h3 {
@@ -36,10 +36,28 @@ body.active {
     margin: 0
 }
 
+
+/* untuk list */
+
+.no-js #experience-timeline>div ul li {
+    list-style-type: circle;
+    color: #49677f;
+    font-size: 0.7em;
+    margin: 0
+}
+
+.no-js #experience-timeline>div ol li {
+    background: #ffe5e5;
+    color: darkred;
+    padding: 5px;
+    margin-left: 35px;
+}
+
 .no-js #experience-timeline:before,
 .no-js #experience-timeline:after {
     content: none
 }
+
 
 /* untuk academic education versi vertikal */
 
@@ -76,12 +94,10 @@ body.active {
     content: none
 }
 
-
 @keyframes dropHeader {
     0% {
         transform: translateY(-100%)
     }
-
     100% {
         transform: translateY(0)
     }
@@ -252,6 +268,24 @@ footer {
     text-decoration: none
 }
 
+.btn-rounded-blue {
+    display: inline-block;
+    color: rgb(38, 7, 7);
+    text-align: center;
+    align-content: center;
+    background-color: #a0cfee;
+    padding: 15px 25px;
+    border: 1px solid rgb(189, 222, 239);
+    border-radius: 35px;
+    transition: .5s ease all
+}
+
+.btn-rounded-blue:hover {
+    color: #3498db;
+    background: #fff;
+    text-decoration: none
+}
+
 .shadow {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
 }
@@ -381,11 +415,9 @@ footer {
     0% {
         transform: scale(1, 1)
     }
-
     50% {
         transform: scale(1.2, 1.2)
     }
-
     100% {
         transform: scale(1, 1)
     }
@@ -408,7 +440,8 @@ footer {
 #experience {
     padding: 50px 15px;
     text-align: center;
-    border-bottom: 1px solid #dcd9d9
+    border-bottom: 1px solid #dcd9d9;
+    background-color: #ffffff;
 }
 
 #experience h2 {
@@ -445,7 +478,9 @@ footer {
     left: 303px
 }
 
+
 /* untuk education versi vertikal */
+
 #academic {
     padding: 50px 15px;
     text-align: center;
@@ -471,7 +506,7 @@ footer {
     right: auto;
     height: 100%;
     width: 3px;
-    background: #3498db;
+    background: #033252;
     z-index: 0
 }
 
@@ -480,39 +515,53 @@ footer {
     content: '';
     width: 3px;
     height: 40px;
-    background: #3498db;
-    background: linear-gradient(to bottom, #3498db, rgba(52, 152, 219, 0));
+    background: #023b61;
+    background: linear-gradient(to bottom, #023252, rgba(64, 175, 249, 0));
     top: 100%;
     left: 303px
 }
 
 .vtimeline-content {
     margin-left: 350px;
-    background: #fff;
-    border: 1px solid #e6e6e6;
+    background: rgb(8, 52, 75);
+    border: 1px solid #22709a;
     padding: 15px;
-    border-radius: 3px;
-    text-align: left
+    /* border-radius: 3px; */
+    border-radius: 50px 10px;
+    /* border-top-left-radius: 20px 20px;
+    border-bottom-right-radius: 80px 80px; */
+    text-align: left;
 }
 
 .vtimeline-content h3 {
     font-size: 1.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 300;
-    color: #374054;
+    color: #fba906;
     display: inline-block;
-    margin: 0
+    margin: 0;
 }
 
 .vtimeline-content h4 {
     font-size: 1.2em;
     font-weight: 300;
-    color: #7e8890;
+    color: #fafbfb;
     margin: 0 0 15px 0
 }
 
 .vtimeline-content p {
-    color: #74808a;
+    color: #f7f7f8;
     font-size: 0.9em;
+    margin: 0
+}
+
+.vtimeline-content ul.a {
+    /* list-style: circle; */
+    list-style-type: square;
+    /* list-style-type: circle; */
+    color: #858678;
+    font-size: 0.7em;
+    font-style: italic;
     margin: 0
 }
 
@@ -520,15 +569,15 @@ footer {
     position: relative;
     display: block;
     vertical-align: top;
-    margin-bottom: 30px
+    margin-bottom: 45px
 }
 
 .vtimeline-icon {
     position: relative;
-    color: #fff;
+    color: rgb(255, 184, 5);
     width: 50px;
     height: 50px;
-    background: #3498db;
+    background: #034068;
     border-radius: 50%;
     float: left;
     z-index: 99;
@@ -548,13 +597,15 @@ footer {
     left: 0;
     top: 10px;
     font-weight: 300;
-    color: #374054
+    font-family: fantasy;
+    color: #f85e04;
 }
 
 #education {
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid #dcd9d9;
-    text-align: center
+    text-align: center;
+    background-color: #e4f3f8be;
 }
 
 #education h2 {
@@ -567,14 +618,17 @@ footer {
     margin: 0 auto 30px auto;
     padding: 15px;
     border: 1px solid #dcd9d9;
-    text-align: left
+    border-radius: 1em;
+    text-align: left;
+    background-color: #f4fbfc;
 }
 
 .education-block h3 {
     font-weight: 500;
+    font-family: fantasy;
     float: left;
     margin: 0;
-    color: #374054
+    color: #cebfbf;
 }
 
 .education-block span {
@@ -596,10 +650,47 @@ footer {
     font-size: 0.9em
 }
 
-.education-block ul {
-    padding: 0 0 0 15px
+
+/* ini adalah animasi icon */
+
+#education i {
+    animation: pulsate 1.5s ease;
+    animation-iteration-count: infinite;
+    padding-top: 5px
 }
 
+#project i {
+    animation: pulsate 1.5s ease;
+    animation-iteration-count: infinite;
+    padding-top: 5px
+}
+
+#portfolio i {
+    animation: pulsate 1.5s ease;
+    animation-iteration-count: infinite;
+    padding-top: 5px
+}
+
+#experience i {
+    animation: pulsate 1.5s ease;
+    animation-iteration-count: infinite;
+    padding-top: 5px
+}
+
+#languages i {
+    animation: pulsate 1.5s ease;
+    animation-iteration-count: infinite;
+    padding-top: 5px
+}
+
+#skills i {
+    animation: pulsate 1.5s ease;
+    animation-iteration-count: infinite;
+    padding-top: 5px
+}
+
+
+/* End animasi icon */
 
 #projects {
     padding: 50px 15px;
@@ -657,16 +748,20 @@ footer {
     display: none
 }
 
+
 /* portflio*/
+
 #portfolio {
-    padding: 50px 15px;
+    padding: 5px 5px;
     border-bottom: 1px solid #dcd9d9;
-    text-align: center
+    text-align: center;
+    background-color: rgba(2, 135, 251, 0.134);
 }
 
 #portfolio h2 {
     color: #374054;
-    margin-bottom: 50px
+    margin-bottom: 30px;
+    /* font-family: cursive; */
 }
 
 .portfolio {
@@ -714,6 +809,7 @@ footer {
     display: none
 }
 
+
 /*end my portofolio */
 
 #skills {
@@ -723,7 +819,8 @@ footer {
 
 #skills h2 {
     color: #374054;
-    margin-bottom: 50px
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 #skills ul {
@@ -741,12 +838,62 @@ footer {
     background: #e4e4ea;
     list-style: none;
     cursor: default;
-    font-size: 1.2em
+    font-size: 1.1em
+}
+
+.certification {
+    padding: 75px 15px;
+    border-bottom: 1px solid #dcd9d9;
+    display: inline-block;
+}
+
+#certification {
+    padding: 5px 5px;
+    border-bottom: 1px solid #dcd9d9;
+    text-align: center;
+    background-color: rgba(170, 211, 247, 0.215);
+}
+
+#certification i {
+    animation: pulsate 1.5s ease;
+    animation-iteration-count: infinite;
+    padding-top: 5px
+}
+
+#certification div.wrapper {
+    width: 100%;
+    float: left;
+    height: auto;
+    border: 1px solid #5694cf;
+}
+
+.publication {
+    padding: 75px 15px;
+    border-bottom: 1px solid #dcd9d9;
+    display: inline-block;
+}
+
+#publication {
+    padding: 5px 5px;
+    border-bottom: 1px solid #dcd9d9;
+    text-align: center;
+    background-color: rgba(245, 246, 248, 0.134);
+}
+
+#publication p {
+    text-indent: -2em;
+    margin-left: 2em;
+}
+
+#publication i {
+    animation: pulsate 1.5s ease;
+    animation-iteration-count: infinite;
+    padding-top: 5px
 }
 
 #contact {
     padding: 50px 15px;
-    background: #3498db;
+    background: #043b5f;
     text-align: center
 }
 
@@ -868,12 +1015,10 @@ footer {
 }
 
 @media only screen and (max-width: 750px) {
-
     #experience-timeline:before,
     #experience-timeline:after {
         left: 23px
     }
-
     .vtimeline-date {
         width: auto;
         text-align: left;
@@ -882,24 +1027,22 @@ footer {
         display: block;
         margin-left: 70px
     }
-
     .vtimeline-icon {
         margin-left: 0
     }
-
     .vtimeline-content {
         margin-left: 70px
     }
 }
 
-/* ini custom academic */
-@media only screen and (max-width: 750px) {
 
+/* ini custom academic */
+
+@media only screen and (max-width: 750px) {
     #academic-timeline:before,
     #academic-timeline:after {
         left: 23px
     }
-
     .vtimeline-date {
         width: auto;
         text-align: left;
@@ -908,15 +1051,14 @@ footer {
         display: block;
         margin-left: 70px
     }
-
     .vtimeline-icon {
         margin-left: 0
     }
-
     .vtimeline-content {
         margin-left: 70px
     }
 }
+
 
 /* End custom academic */
 
@@ -927,26 +1069,21 @@ footer {
         max-height: auto;
         padding: 100px 15px
     }
-
     #lead-content {
         position: relative;
         transform: none;
         left: auto;
         top: auto
     }
-
     #lead-content h1 {
         font-size: 3em
     }
-
     #lead-content h2 {
         font-size: 1.75em
     }
-
     #about {
         text-align: center
     }
-
     #about p {
         text-align: left
     }
@@ -961,12 +1098,10 @@ footer {
         bottom: 0;
         height: 100%
     }
-
     #mobile-menu-open,
     #mobile-menu-close {
         display: block
     }
-
     #menu {
         height: 100%;
         overflow-y: auto;
@@ -974,37 +1109,29 @@ footer {
         border-radius: 0;
         width: 100%
     }
-
     #menu li {
         display: block;
         margin-bottom: 10px
     }
-
     #lead-content h1 {
         font-size: 2em
     }
-
     #lead-content h2 {
         font-size: 1.3em
     }
-
     #lead-content a {
         padding: 10px 20px
     }
-
     #lead-down {
         display: none
     }
-
     .education-block h3,
     .education-block span {
         float: none
     }
-
     .project-image {
         display: none
     }
-
     .project-info {
         position: relative;
         margin: 0;
@@ -1012,11 +1139,9 @@ footer {
         top: auto;
         transform: none
     }
-
     footer {
         text-align: center
     }
-
     .social {
         text-align: center
     }
@@ -1026,18 +1151,18 @@ footer {
     #lead-content h1 {
         font-size: 1.5em
     }
-
     #lead-content h2 {
         font-size: 1em
     }
-
     #lead-content a {
         font-size: 0.9em;
-        padding: 5px 10px
+        padding: 5px 5px
     }
 }
 
+
 /* My Custom style*/
+
 #webcoderskull {
     position: absolute;
     left: 0;
@@ -1054,28 +1179,38 @@ canvas {
 }
 
 #webcoderskull h1 {
-    letter-spacing: 5px;
-    font-size: 5rem;
+    letter-spacing: 2px;
+    font-size: 4rem;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
 }
 
+
 /* for my photos */
+
 .responsive-photo {
     width: 50%;
     max-width: 100%;
     height: auto;
 }
 
+
 /* for ht-logo */
+
 .responsive-logo {
-    width: 100%;
-    max-width: 100%;
+    width: 90%;
+    max-width: 90%;
     height: auto;
+    vertical-align: top;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
 }
 
+
 /*ini custom */
+
 .icon-about-me ul,
 li {
     display: inline;

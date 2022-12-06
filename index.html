@@ -2,9 +2,10 @@
 <html class="no-js" lang="en">
 
 <!-- for animated particles bg -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/scripts_particles.js"></script>
 
 <head>
     <meta charset="utf-8">
@@ -17,6 +18,10 @@
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <!-- my custom -->
+    <link href="css/myStyle.css" rel="stylesheet">
+    <link href="css/w3.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -33,14 +38,14 @@
                 <a href="#about">About</a>
             </li>
             <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
                 <a href="#education">Education</a>
             </li>
             <li>
-                <a href="#academic">Academic</a>
+                <a href="#experience">Experience</a>
             </li>
+            <!-- <li>
+                <a href="#academic">Academic</a>
+            </li> -->
             <li>
                 <a href="#portfolio">Portfolio</a>
             </li>
@@ -48,37 +53,47 @@
                 <a href="#skills">Skills</a>
             </li>
             <li>
+                <a href="#certification">Certification</a>
+            </li>
+            <li>
+                <a href="#publication">Publication</a>
+            </li>
+            <li>
                 <a href="#contact">Contact</a>
             </li>
         </ul>
     </header>
     <!-- End header -->
+
     <!-- start particles -->
     <div id="particles">
+        <div id="intro"></div>
         <div id="webcoderskull">
+            <!-- End #lead-down -->
             <div id="lead-content">
                 <img src="./images/ht-low-res-col-tp-1.png" class="responsive-logo">
                 <br>
                 <h1> Hendrik Tampubolon </h1>
                 <!-- <h2> |ML-Ops & AI Engineer|Data Science|IoT Dev|</h2> -->
                 <br>
-                <a href="#" class="btn-rounded-white">Download Resume</a>
+                <a href="./media/MyCV.pdf" class="btn-rounded-white" target="_blank">Download Resume</a>
+                <!-- <button class="btn"><i class="fa fa-download"></i> Download</button> -->
+                <br>
+                <br>
+
             </div>
         </div>
         <!-- End #lead-content -->
-        <div id="lead-overlay"></div>
+    </div>
+    <!-- End particles -->
+    <div id="lead-overlay">
         <div id="lead-down">
             <span>
                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
             </span>
         </div>
-        <!-- End #lead-down -->
     </div>
-    <!-- End particles -->
-
-    <div id="lead">
-
-    </div>
+    <div id="lead"></div>
     <!-- start about me -->
     <div id="about">
         <div class="container">
@@ -100,6 +115,10 @@
                                         aria-hidden="true"></i></a>
                             </li>
                             <li>
+                                <a href="mailto:hendrik.gian@gmail.com" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                            </li>
+
+                            <li>
                                 <a href="https://www.linkedin.com/in/hendriktampubolon/" target="_blank"><i
                                         class="fa fa-linkedin" aria-hidden="true"></i></a>
                             </li>
@@ -115,10 +134,8 @@
                     <hr>
                     <br>
                     <p align=justify>
-                        I am comfortable with working related to Machine Learning, Deep Learning on Computer Vision
-                        applications, Predictive Modeling, Data Analysis, Data Science, Database Design, Web Apps
-                        Development, Edge-Fog-Cloud Computing, and IoT Apps Development. However, I am also open to
-                        facing new role challenges in the job offered.
+                        I am comfortable with working related to Machine Learning, Deep Learning on Computer Vision applications, Predictive Modeling, Data Analysis, Data Science, Database Design, Web Apps Development, Edge-Fog-Cloud Computing, and IoT Apps Development. However,
+                        I am also open to facing new role challenges in the job offered.
                     </p>
                     <br>
                     <hr>
@@ -159,26 +176,59 @@
     </div> -->
     <!-- End Academic -->
 
+    <div id="education">
+        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>National Taiwan University of Science and Technology, Taipei, Taiwan</h3>
+            <span class="education-date">Sept 2018 - Present</span>
+            <h4>PhD in Computer Science and Information Engineering (CSIE)</h4>
+            <p>
+                Advisor: Prof. Kai-Lung Hua, Ph.D. | Co-Advisor: Prof. Chao-Lung Yang, Ph.D. (Will be graduated in July 2023) .
+            </p>
+        </div>
+        <!-- End .education-block -->
+
+        <div class="education-block">
+            <h3>National Chung Cheng University, Chia-Yi, Taiwan</h3>
+            <span class="education-date">Sept 2014 - Dec 2016</span>
+            <h4>Master of Science (MSc.) in Computer Science and Information Engineering (CSIE)</h4>
+            <p>
+                Advisor: Prof. Pao-Ann Hsiung, Ph.D Thesis: Supervised Deep Learning for Traffic Flow Prediction
+            </p>
+
+        </div>
+        <!-- End .education-block -->
+        <div class="education-block">
+            <h3>University of Sumatera Utara, Medan, Indonesia</h3>
+            <span class="education-date">Aug 2007 - Oct 2012</span>
+            <h4>Bachelor in Information Technology (IT)</h4>
+            <p>
+                Academic Advisor: Prof.Dr. Opim Salim Sitompul, M.Sc.|Thesis Advisor: M Anggia Muchtar, S.T., MMIT Thesis: Learning Management System Development on Facebook Apps
+            </p>
+
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
     <div id="experience" class="background-alt">
+        <i class="fa fa-briefcase" aria-hidden="true"></i>
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
             <div data-date="Aug 2017 – Aug 2021">
                 <h3>Krida Wacana Christian University, Jakarta, Indonesia</h3>
                 <h4>Information Systems Instructor</h4>
                 <p>2017 Spring: Main Instructor</p>
-                <ul>
-                    <li>INF313 Software Engineering(Undergraduate)</li>
-                    <li>SI2WP007 Database System (Undergraduate)</li>
-                    <li>SI4205 System Information Engineering (Undergraduate)</li>
+                <ul class="a">
+                    <li> INF313 Software Engineering(Undergraduate)</li>
+                    <li> SI2WP007 Database System (Undergraduate)</li>
+                    <li> SI4205 System Information Engineering (Undergraduate)</li>
                 </ul>
                 <p>2017 Fall: Co-Instructor</p>
-                <ul>
-                    <li>
-                        SI5405 Expert System (Undergraduate)
-                    </li>
+                <ul class="a">
+                    <li>SI5405 Expert System (Undergraduate)</li>
                 </ul>
-
-
             </div>
 
             <div data-date="Jun 2017 – Oct 2017">
@@ -193,10 +243,7 @@
                 <h3>PT.Masindo Utama Nusantara (North Sumatera Region), Medan, Indonesia</h3>
                 <h4>Project Administrator (H3I/Huawei Project Acquisied by Indosat Indonesia)</h4>
                 <p>
-                    Coordinate and Lead the Field Engineer.
-                    Making Database of Tower Site Preventive Maintenance.
-                    Making Report of Tower Site Preventive Maintenance.
-                    Making Planning of Tower Site Preventive
+                    Coordinate and Lead the Field Engineer. Making Database of Tower Site Preventive Maintenance. Making Report of Tower Site Preventive Maintenance. Making Planning of Tower Site Preventive
                 </p>
             </div>
 
@@ -212,121 +259,490 @@
     </div>
     <!-- End #experience -->
 
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>National Taiwan University of Science and Technology, Taipei, Taiwan</h3>
-            <span class="education-date">Sept 2018 - Present</span>
-            <h4>PhD in Computer Science and Information Engineering (CSIE)</h4>
-            <p>
-                Advisor: Prof. Kai-Lung Hua, Ph.D. | Co-Advisor: Prof. Chao-Lung Yang, Ph.D. (Will be graduated in July
-                2023) .
-            </p>
-        </div>
-        <!-- End .education-block -->
-
-        <div class="education-block">
-            <h3>National Chung Cheng University, Chia-Yi, Taiwan</h3>
-            <span class="education-date">Sept 2014 - Dec 2016</span>
-            <h4>Master of Science (MSc.) in Computer Science and Information Engineering (CSIE)</h4>
-            <p>
-                Advisor: Prof. Pao-Ann Hsiung, Ph.D
-                Thesis: Supervised Deep Learning for Traffic Flow Prediction
-            </p>
-
-        </div>
-        <!-- End .education-block -->
-        <div class="education-block">
-            <h3>University of Sumatera Utara, Medan, Indonesia</h3>
-            <span class="education-date">Aug 2007 - Oct 2012</span>
-            <h4>Bachelor in Information Technology (IT)</h4>
-            <p>
-                Academic Advisor: Prof.Dr. Opim Salim Sitompul, M.Sc.|Thesis Advisor: M Anggia Muchtar, S.T., MMIT
-                Thesis: Learning Management System Development on Facebook Apps
-            </p>
-
-        </div>
-        <!-- End .education-block -->
-    </div>
-    <!-- End #education -->
-
+    <!-- start portfolio -->
     <div id="portfolio" class="background-alt">
+        <i class="fa fa-folder-open-o" aria-hidden="true"></i>
         <h2 class="heading">Portfolio</h2>
-        <div class="container">
-            <div class="row">
-                <div class="portfolio shadow-large">
-                    <h3>Simslab Color Project</h3>
-                    <div class="portfolio-image">
-                        <img src="images/simslab_color.png" alt="Simslab Color Project" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="portfolio-info">
-                        <h3>Simslab Color Project</h3>
-                        <p>
-                            This is a Pixel-based Image processing that imitate the steps of Human Labor for Image
-                            Editing, It is able to generate the AL images automatically by control the threshold of
-                            color pixel mask, specifically for Sharp Edges Images
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="portfolio shadow-large">
-                    <h3>Skeleton-Based HAR/HIR EFCC</h3>
-                    <div class="portfolio-image">
-                        <img src="images/HAR_HIR_EFCC.png" alt="Skeleton-Based HAR/HIR EFCC" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="portfolio-info">
-                        <h3>Skeleton-Based HAR/HIR EFCC</h3>
-                        <p>
-                            Develop Secure and Privacy-Preserving Human Interaction Recognition with Edge-Fog-Cloud
-                            Computing. It Contains three folds:
-                        <ul>
-                            <li>Front-End</li>
-                            <li>Back-End</li>
-                            <li>Security Modules</li>
-
-                        </ul>
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-        </div>
     </div>
-    <!-- End #projects -->
+    <!-- end portfolio -->
+    <div class="slider">
+        <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav" />
+        <input type="radio" name="slider" title="slide2" class="slider__nav" />
+        <input type="radio" name="slider" title="slide3" class="slider__nav" />
+        <input type="radio" name="slider" title="slide4" class="slider__nav" />
+        <div class="slider__inner">
+            <!-- project-1 -->
+            <div class="slider__contents">
+                <!-- start row containernya -->
+                <div class="row containernya">
+                    <div class="col-sm-6 gambarnya">
+                        <!-- gambarnya -->
+                        <a target="_blank" href="https://github.com/hendrikTpl/skeleton-based-ar-efcc"></a>
+                        <img src="images/Skeleton-Based-TPIR-EFCC.png" alt="Simslab Color Project" />
 
+                    </div>
+                    <div class="col-sm-6 descnya">
+                        <!-- descriptionnya -->
+                        <h2 class="slider__caption">Skeleton-Based HAR/HIR EFCC</h2>
+                        <p class="slider__txt">Develop Secure and Privacy-Preserving Human Interaction Recognition with Edge-Fog-Cloud Computing. It Contains three folds: (a) Front-End (b)Back-End (c)Security Modules</p>
+                    </div>
+                </div>
+                <!-- end row containernya -->
+            </div>
+            <!-- project-2 -->
+            <div class="slider__contents">
+                <!-- start row containernya -->
+                <div class="row containernya">
+                    <div class="col-sm-6 gambarnya">
+                        <!-- gambarnya -->
+                        <a target="_blank" href="https://github.com/hendrikTpl/SimsLab-Color"></a>
+                        <img src="images/simslab_color.png" alt="Simslab Color Project" />
+
+                    </div>
+                    <div class="col-sm-6 descnya">
+                        <!-- descriptionnya -->
+                        <h2 class="slider__caption">Simslab Color Project</h2>
+                        <p class="slider__txt">
+                            This is a Pixel-based Image processing that imitate the steps of Human Labor for Image Editing, It is able to generate the AL images automatically by control the threshold of color pixel mask, specifically for Sharp Edges Images
+                        </p>
+                    </div>
+                </div>
+                <!-- end row containernya -->
+
+            </div>
+            <!-- project-3 -->
+            <div class="slider__contents">
+                <!-- start row containernya -->
+                <div class="row containernya">
+                    <div class="col-sm-6 gambarnya">
+                        <!-- gambarnya -->
+                        <a target="_blank" href=""></a>
+                        <img src="images/jsc.png" alt="JSC Project" />
+
+                    </div>
+                    <div class="col-sm-6 descnya">
+                        <!-- descriptionnya -->
+                        <h2 class="slider__caption">Jakarta Smart City (JSC) Project</h2>
+                        <p class="slider__txt">
+                            This project is a cooperation between JSC and NTUST which contains very Big Raw Data from Jakarta City. At least, there were 4 mainly Task: (a) Extract JSC Logs data on certain location(lat,lot) (b) Integrate JSC data with Open Street Map (OSM) (c) Data
+                            Visualization (d) Develop CapsuleNet Model for Network-Wide-Road Traffic prediction at once
+
+                        </p>
+                    </div>
+                </div>
+                <!-- end row containernya -->
+            </div>
+            <!-- project-4 -->
+            <div class="slider__contents">
+                <!-- start row containernya -->
+                <div class="row containernya">
+                    <div class="col-sm-6 gambarnya">
+                        <!-- gambarnya -->
+                        <a target="_blank" href="https://github.com/hendrikTpl/skeleton-based-ar-efcc"></a>
+                        <img src="images/handbell_project.png" alt="HB Project" />
+
+                    </div>
+                    <div class="col-sm-6 descnya">
+                        <!-- descriptionnya -->
+                        <h2 class="slider__caption">Handbell Project</h2>
+                        <p class="slider__txt">
+                            Data Analysis and Visualization from Industrial Sensors, Streaming, Anomaly Detection. I use Angular for UI design and Ploty JavaScript Lib for Streaming Data Visualization. Ngix and Flask and Pyhon were deployed in container on AWS Cloud. Code: The code
+                            is private due to confidential issue of the Handbell Company
+                        </p>
+                    </div>
+                </div>
+                <!-- end row containernya -->
+            </div>
+            <!-- tambahkan project disini -->
+        </div>
+        <!-- end inner slidernya -->
+    </div>
+    <!-- end portfolio slider -->
+
+
+    <!-- skillset start -->
     <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>C++</li>
-            <li>PHP</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>Node.js</li>
-            <li>Angular</li>
-            <li>React</li>
-            <li>HTML5</li>
-            <li>CSS</li>
-            <li>Django</li>
-            <li>PostgreSQL</li>
-            <li>MySQL</li>
-            <li>SQL</li>
-            <li>MongoDB</li>
-            <li>Docker</li>
+        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+        <h2 class="heading">Skills Set</h2>
+        <div class="container">
+            <!-- colom bagi dua -->
+            <div class="row">
+                <!-- programming skill start -->
+                <div class="col-sm-6">
+                    <!-- contentnya  -->
+                    <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                    <h2>Programming</h2>
+                    <!-- pertama -->
+                    <div class="row">
+                        <div class="col-sm-4">Python</div>
+                        <div class="col-sm-8">
+                            <div class="w3-container">
+                                <div class="w3-light-grey">
+                                    <div class="w3-container w3-blue" style="width:95%">95%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- kedua -->
+                    <div class="row">
+                        <div class="col-sm-4">PHP</div>
+                        <div class="col-sm-8">
+                            <div class="w3-container">
+                                <div class="w3-light-grey">
+                                    <div class="w3-container w3-blue" style="width:80%">80%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ketiga -->
+                    <div class="row">
+                        <div class="col-sm-4">C++</div>
+                        <div class="col-sm-8">
+                            <div class="w3-container">
+                                <div class="w3-light-grey">
+                                    <div class="w3-container w3-blue" style="width:75%">75%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- keempat -->
+                    <div class="row">
+                        <div class="col-sm-4">R</div>
+                        <div class="col-sm-8">
+                            <div class="w3-container">
+                                <div class="w3-light-grey">
+                                    <div class="w3-container w3-blue" style="width:85%">85%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end contentnya  -->
+                </div>
+                <!-- end programming -->
+                <!-- Scripting skill start -->
+                <div class="col-sm-6">
+                    <i class="fa fa-solid fa-code" aria-hidden="true"></i>
+                    <h2>Scripting</h2>
+                    <!-- pertama -->
+                    <div class="row">
+                        <div class="col-sm-4">JavaScript</div>
+                        <div class="col-sm-8">
+                            <div class="w3-container">
+                                <div class="w3-light-grey">
+                                    <div class="w3-container w3-blue" style="width:90%">90%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- kedua -->
+                    <div class="row">
+                        <div class="col-sm-4">HTML5</div>
+                        <div class="col-sm-8">
+                            <div class="w3-container">
+                                <div class="w3-light-grey">
+                                    <div class="w3-container w3-blue" style="width:99%">99%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ketiga -->
+                    <div class="row">
+                        <div class="col-sm-4">CSS</div>
+                        <div class="col-sm-8">
+                            <div class="w3-container">
+                                <div class="w3-light-grey">
+                                    <div class="w3-container w3-blue" style="width:98%">98%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- keempat -->
+                    <div class="row">
+                        <div class="col-sm-4">TypeScript</div>
+                        <div class="col-sm-8">
+                            <div class="w3-container">
+                                <div class="w3-light-grey">
+                                    <div class="w3-container w3-blue" style="width:80%">80%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end scripting -->
+            </div>
+            <!-- end colom bagi dua -->
+            <!-- Database skill -->
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <i class="fa fa-database" aria-hidden="true"></i>
+                    <h2>Databases</h2>
+                    <!-- 1 -->
+                    <div class="row">
+                        <div class="col-sm-4">SQL</div>
+                        <div class="col-sm-8">
+                            <div class="w3-container">
+                                <div class="w3-light-grey">
+                                    <div class="w3-container w3-blue" style="width:95%">95%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="row">
+                        <div class="col-sm-4">NoSQL</div>
+                        <div class="col-sm-8">
+                            <div class="w3-container">
+                                <div class="w3-light-grey">
+                                    <div class="w3-container w3-blue" style="width:85%">85%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
+                <div class="col-sm-6">
+                    <i class="fa fa-language" aria-hidden="true"></i>
+                    <h2>Languages</h2>
+                    <!-- 1 -->
+                    <div class="row">
+                        <div class="col-sm-4">Indonesian</div>
+                        <div class="col-sm-8">
+                            <div class="w3-container">
+                                <div class="w3-light-grey">
+                                    <div class="w3-container w3-blue" style="width:100%">100%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="row">
+                        <div class="col-sm-4">Batakness</div>
+                        <div class="col-sm-8">
+                            <div class="w3-container">
+                                <div class="w3-light-grey">
+                                    <div class="w3-container w3-blue" style="width:100%">100%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="row">
+                        <div class="col-sm-4">English</div>
+                        <div class="col-sm-8">
+                            <div class="w3-container">
+                                <div class="w3-light-grey">
+                                    <div class="w3-container w3-blue" style="width:90%">90%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="row">
+                        <div class="col-sm-4">Chinese</div>
+                        <div class="col-sm-8">
+                            <div class="w3-container">
+                                <div class="w3-light-grey">
+                                    <div class="w3-container w3-blue" style="width:40%">40%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end content bahasa -->
+                </div>
+                <!-- end bahasa-->
+            </div>
+            <!-- end row bagi dua -->
+        </div>
+        <!-- end container -->
+        <!-- untuk software and toolset -->
+        <br>
+        <hr>
+        <!-- container for software and tools -->
+        <div class="container">
+            <h2><u>My Tools Set</u></h2>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h2>Cloud</h2>
+                    <ul>
+                        <li>
+                            AWS
+                        </li>
+                        <li>
+                            GCP
+                        </li>
+                        <li>
+                            Alibaba
+                        </li>
+                    </ul>
+                </div>
 
+                <div class="col-sm-4">
+                    <h2>Front-End Framework</h2>
+                    <ul>
+                        <li>
+                            AngularJs
+                        </li>
+                        <li>
+                            React
+                        </li>
+                        <li>
+                            Bootstrap
+                        </li>
+                    </ul>
+                </div>
 
-        </ul>
+                <div class="col-sm-4">
+                    <h2>Web Dev</h2>
+                    <ul>
+                        <li>
+                            Django
+                        </li>
+                        <li>
+                            Ngix
+                        </li>
+                        <li>
+                            Drupal
+                        </li>
+                        <li>
+                            PhpMyAdmin
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- baris kedua -->
+            <div class="row">
+                <div class="col-sm-4">
+                    <h2>DB</h2>
+                    <ul>
+                        <li>
+                            PostgreSQL
+                        </li>
+                        <li>
+                            MySQL
+                        </li>
+                        <li>
+                            Oracles
+                        </li>
+                        <li>
+                            SQLite
+                        </li>
+                        <li>
+                            MongoDB
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4">
+                    <h2>ML & AI Framework</h2>
+                    <ul>
+                        <li>
+                            PyTorch
+                        </li>
+                        <li>
+                            TensorFlow
+                        </li>
+                        <li>
+                            TensorFlowJs
+                        </li>
+                        <li>
+                            Onnx
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4">
+                    <h2>Bussiness Intelligence</h2>
+                    <ul>
+                        <li>
+                            Google BigQuery
+                        </li>
+                        <li>
+                            Google DataStudio
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- akhir baris kedua -->
+            <!-- baris ketiga -->
+            <div class="row">
+                <div class="col-sm-4">
+                    <h2>Container</h2>
+                    <ul>
+                        <li>
+                            Docker
+                        </li>
+                        <li>
+                            Kubernetes
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4">
+                    <h2>IoT</h2>
+                    <ul>
+                        <li>
+                            Nvidia Jetson Nano
+                        </li>
+                        <li>
+                            Raspberry Pi
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4">
+                    <h2>IDE</h2>
+                    <ul>
+                        <li>
+                            VsCode
+                        </li>
+                        <li>
+                            Jupiter Lab
+                        </li>
+                        <li>
+                            Visual Studio
+                        </li>
+                        <li>
+                            RStudio
+                        </li>
+                        <li>
+                            Notepad++
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- akhir baris ketiga -->
+        </div>
+        <!-- End# container for software and tools -->
     </div>
     <!-- End #skills -->
 
+    <!-- certification start -->
+    <div id="certification">
+        <i class="fa fa-address-card-o" aria-hidden="true"></i>
+        <h2 class="heading">Certification</h2>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 wrapper">
+                <div class='embed-responsive' style='padding-bottom:100%'>
+                    <object data='media/IEEEMemberCertificate.pdf' type='application/pdf' width='100%' height='100%'></object>
+                </div>
+                <p>
+                    If Your web browser doesn't have a PDF Plugin. You can download the PDF <br><a href="media/IEEEMemberCertificate.pdf"><i class="fa fa-cloud-download" aria-hidden="true"></i>Click Here</a>
+                </p>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+    <!-- end certification -->
+
+    <!-- publication start -->
+    <div id="publication">
+        <i class="fa fa-book" aria-hidden="true"></i>
+        <h2 class="heading">Publication</h2>
+    </div>
+    <!-- end publication -->
     <div id="contact">
         <h2>Get in Touch</h2>
         <div id="contact-form">
@@ -375,11 +791,9 @@
         </div>
     </footer>
     <!-- End footer -->
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
-    <script src="js/scripts_particles.js"></script>
-
+    <script src="js/myJs.js"></script>
 </body>
 
 </html>
