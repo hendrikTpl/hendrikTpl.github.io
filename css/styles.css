@@ -373,7 +373,7 @@ footer {
 
 #lead {
     position: relative;
-    height: 50vh;
+    height: 100%;
     min-height: 50px;
     max-height: 200px;
     /*background: url(../images/ht_bg.png);*/
@@ -385,7 +385,7 @@ footer {
 #lead-content {
     position: absolute;
     z-index: 10;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center
@@ -414,7 +414,7 @@ footer {
 
 #lead-overlay {
     position: absolute;
-    height: 100%;
+    height: 110%;
     width: 100%;
     top: 0;
     right: 0;
@@ -431,7 +431,7 @@ footer {
     width: 100%;
     text-align: center;
     z-index: 10;
-    bottom: 15px;
+    bottom: 20px;
     color: #fff
 }
 
@@ -443,7 +443,8 @@ footer {
     height: 35px;
     border-radius: 50%;
     border: 3px solid #a0cfee;
-    text-align: center
+    text-align: center;
+    padding-bottom: 25px;
 }
 
 #lead-down i {
@@ -1240,13 +1241,16 @@ canvas {
 /* for ht-logo */
 
 .responsive-logo {
-    width: 90%;
+    width: 60%;
+    min-width: 50%;
     max-width: 90%;
     height: auto;
-    vertical-align: top;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    -ms-flex-align: center;
+    vertical-align: baseline;
+    -webkit-box-align: baseline;
+    -moz-box-align: baseline;
+    -ms-flex-align: baseline;
+    padding-bottom: 15px;
+    padding-top: 25px;
 }
 
 
