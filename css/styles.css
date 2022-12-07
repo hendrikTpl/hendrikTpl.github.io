@@ -1,3 +1,42 @@
+@-moz-viewport {
+    width: device-width;
+    scale: 1;
+}
+
+@-ms-viewport {
+    width: device-width;
+    scale: 1;
+}
+
+@-o-viewport {
+    width: device-width;
+    scale: 1;
+}
+
+@-webkit-viewport {
+    width: device-width;
+    scale: 1;
+}
+
+@viewport {
+    width: device-width;
+    scale: 1;
+}
+
+html {
+    box-sizing: border-box;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     font-size: 16px
@@ -326,18 +365,20 @@ footer {
     position: relative;
     height: 50vh;
     min-height: 50px;
-    max-height: 100px;
+    max-height: 200px;
     background: url(../images/ht-low-res-color-tp.png);
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 #lead {
     position: relative;
     height: 50vh;
     min-height: 50px;
-    max-height: 100px;
+    max-height: 200px;
     /*background: url(../images/ht_bg.png);*/
     background-size: cover;
-    padding: 15px;
+    padding: 20px;
     overflow: hidden
 }
 
