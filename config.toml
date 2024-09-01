@@ -1,3 +1,7 @@
-baseURL = 'http://example.org/'
+baseURL = 'http://localhost:1313/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Hendrik Tampubolon'
+canonifyURLs = true
+
+[permalinks]
+  post = "/:slug/"
